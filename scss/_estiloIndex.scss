@@ -1,0 +1,237 @@
+@media (min-width:320px) and (max-width:520px){
+*{
+   @include siempre;
+}
+html{
+    font-size: 62.5%;
+}
+    //Sección Header - Titulo - Parrafo
+.contenedorTituloParrafo{
+    @include flexCenter;
+    flex-direction: column;
+}
+    
+.contenedorTituloParrafo h1, .contenedorTituloParrafo h2{
+    @include tituloMobile;
+}
+    
+.contenedorTituloParrafo p{
+    @include parrafoMobile;
+}
+header figure{
+    text-align: center;
+}
+
+header figure img{
+    width:30rem;
+}
+//Sección Main- Tarjetas Index
+.contenedorIndex{
+    display: grid;
+    grid-template-areas: 
+    "sede "
+    "instuctor"
+    "eventos"
+    "contacto"
+    ;
+    margin:2rem;
+    color:$letrablanca;
+}
+
+.contenedorIndex .cardSede{
+    color: white;
+    margin-top: 7rem;
+    grid-area: sede;
+    @include card;
+    background-image:linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url(/imagenes/fondoCards/fotosede.jpeg);
+    background-position:bottom left;
+    background-size: cover;
+
+}
+//Verificar
+.contenedorIndex .cardSede:hover{
+    border-radius:$bordeCard;
+}
+
+.contenedorIndex .cardInstructor{
+    
+    margin-top: 4rem;
+    grid-area:instuctor;
+    @include card;
+    background-image:linear-gradient(rgba(0, 0, 0,1 ), rgba(0, 0, 0, 0.4)), url(/imagenes/fondoCards/fondotres.jpeg);
+    background-position:center;
+    background-size: cover;
+}
+
+.contenedorIndex .cardEventos{
+    margin-top: 4rem;
+    grid-area:eventos;
+    @include card;
+    background-image:linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url(/imagenes/fondoCards/fondoContacto.jpeg);
+    background-position:  center ;
+    background-size: cover; 
+}
+
+.contenedorIndex .cardContactos{
+    margin-top: 4rem;
+    grid-area:contacto;
+    @include card;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(/imagenes/fondoCards/fondotodo.jpeg);
+    background-position: right ;
+    background-size: cover; 
+}
+.cardEventos .tituloCard{
+    @include tituloCard;
+    grid-area:titulo;
+    color:white;
+
+}
+
+.techoCard{
+    background-color:rgba(77, 76, 76, 0.71);
+    height: 2.2rem;
+    grid-area:techo;
+    border-radius:$bordeCard;
+}
+
+.tituloCard{
+    @include tituloCard;
+    grid-area:titulo;
+}
+
+.parrafoCard{
+    @include parrafoCard;
+    grid-area:parrafo;
+}
+
+.pisoCard{
+    background-color:rgba(77, 76, 76, 0.71);
+    height: 2.2rem;
+    grid-area:piso;
+    border-radius:$bordeCard; 
+}
+
+
+
+
+}
+
+
+
+
+
+@media (min-width:991px){
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../imagenes/descarga\ \(3\).jpg);
+    background-attachment:fixed;
+    background-position:top center;
+    background-size:cover;
+}
+//Sección Header - Titulo - Parrafo
+.contenedorTituloParrafo{
+    @include flexCenter;
+    flex-direction: column;
+}
+
+.contenedorTituloParrafo h1{
+    @include tituloPc;
+}
+
+.contenedorTituloParrafo p{
+   @include parrafoPc;
+}
+//Sección Main- Tarjetas Index
+
+.indexMain{
+    display: grid;         
+    grid-template-areas:
+    "  eventos eventos   "
+    "instructor  sede"
+    "instructor  sede";
+    grid-gap:8rem;
+    grid-row: 8rem;
+    margin: 10rem;
+}
+
+.contenedorEventos{
+    margin-left: 30rem;
+    border-radius: 2rem;
+    width: 85vh;
+    height: 75vh;
+    grid-area: eventos;
+    background-image: url(../imagenes/Boxing\ Gloves\ Wallpapers\ -\ Wallpaper\ Cave.jpg);
+    background-size:cover;
+   
+}
+
+.contenedorInstructor{
+    border-radius: 2rem;
+    width: 85vh;
+    height: 75vh;
+    grid-area: instructor;
+    background-image: url(../imagenes/Boxing\ Gloves\ Wallpapers\ -\ Wallpaper\ Cave.jpg);
+    background-size:cover;
+   
+}
+/*
+.contenedorEventos{
+    border-radius: 2rem;
+    width: 85vh;
+    height: 75vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 10), rgba(0, 0, 0, 0.2)), url(/imagenes/Cemento\ Pared\ Piedra\ Ladrillo\ Antecedentes.jpg);
+    grid-area: eventos;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+*/
+.contenedorSede{
+    border-radius: 2rem;
+    width: 85vh;
+    height: 75vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 10), rgba(0, 0, 0, 0.2)), url(/imagenes/Hay\ que\ aprender\ a\ meditar.png);
+    grid-area: sede;
+}
+
+
+ .tarjetaIndex{
+display: grid;
+   
+                        
+    
+}
+.colorBottomIndex{
+    border-radius:0 0 2rem 2rem;
+    margin-top:11.5rem;
+    height: 4rem;
+    background-color: rgba(27, 46, 46, 0.861);
+   
+}
+
+.colorTopIndex{
+    border-radius:2rem 2rem 0 0 ;
+    height: 4rem;
+    background-color: rgba(27, 46, 46, 0.861);
+    
+}
+
+.tituloTarjetaIndex{
+    margin:2rem 2rem ;
+    text-align: center;
+    color:white;
+    font-size: 3rem;
+ 
+}
+.parrafoTarjetaIndex{
+    margin-top: 8rem;
+    margin-right:2rem;
+    font-weight: 500;
+    text-align: right;
+    color: white;
+    font: 2.5rem $letraParrafo;
+}
+
+figure{
+    text-align: center;
+}
+
+}

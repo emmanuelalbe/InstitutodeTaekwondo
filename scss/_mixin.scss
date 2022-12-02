@@ -1,0 +1,104 @@
+/*Titulo y Parrafo Tamaño Movil*/
+@mixin siempre{
+    box-sizing: border-box; 
+    margin: 0;
+    padding:0;
+    
+}
+@mixin tituloMobile{
+    font: 3rem $letraParrafo;
+    margin: 7rem 1rem 0rem 1rem;
+    color:$letrablanca;
+}
+
+@mixin parrafoMobile{
+    margin:3rem 2rem;
+    font: 1.5rem $letraParrafo;
+    font-weight: 800;
+    text-transform:uppercase;
+    text-align:center;
+    color:$letrablanca;
+    line-height: 3rem;
+}
+
+@mixin tituloCard{
+    font: 3rem $letraParrafo;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+@mixin parrafoCard{
+    margin:1rem 0.6rem;
+    font: 1.2rem $letraParrafo;
+    font-weight: 800;
+    text-transform:uppercase;
+    text-align:left;
+    line-height: 3rem;
+}
+@mixin tituloCard{
+    font-size: 2rem;
+    margin-top:1rem;
+    font-weight: 600;
+    text-transform:uppercase;
+    text-decoration: underline;
+}
+
+@mixin card{
+    display: grid;
+    grid-template-areas:
+    "techo"
+    "titulo"
+    "parrafo"
+    "piso "
+    ;
+}
+
+
+/*Titulo y Parrafo Tamaño Pc*/
+@mixin tituloPc{
+    font: 5rem $letraParrafo;
+    margin-top: 10rem;
+    color:rgb(255, 255, 255) 
+}
+
+@mixin parrafoPc{
+    font: 2rem $letraParrafo;
+    font-weight: 800;
+    margin:5rem;
+    text-transform: uppercase;
+    text-align:center;
+    color:rgb(255, 255, 255);
+    line-height: 5rem;
+}
+
+@mixin flexCenter{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+//Mixin Instructor
+
+@mixin cardSedeMobile{
+    color:#e2e2e2 ;
+    border-radius: 2rem;
+    background:linear-gradient(-45deg,#131a35ad 50%, #001f3a 50%);
+    margin: 2.5rem;
+    height: auto;
+    border: 0.1rem solid white;
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   flex-direction: column;
+}
+
+@mixin carruselUl{
+    text-align: center;
+    padding: 0;
+    display: flex;
+    width: 200%;
+    animation: cambio 15s infinite;
+    animation-timing-function: ease-out;
+    justify-content: center;
+    align-items: center;
+}

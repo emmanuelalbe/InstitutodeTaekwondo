@@ -1,0 +1,53 @@
+@media (min-width:320px) and (max-width:520px){
+
+*{
+     @include siempre;
+}
+
+html{
+    font-size: 62,5%;
+}
+
+.instructorMartin, .instructorFernanda, .instructorAlan ,.instructorIvan , .instructorEzequiel ,.instructorNahir,.instructorAymara,.instructorLudmila, .instructorMatias, .instructorAron{
+    margin-bottom: 3rem;
+    height:auto;
+    margin: 3.5rem;
+    background-color: rgba(0, 0, 0, 0.425);
+    border-radius: 2rem;
+    border: 0.1rem solid white;
+    box-shadow:  0.3rem -0.2rem 0.5rem -0.3rem rgba(118,213,247,1);
+}
+
+.contenedorins{
+    color: $letrablanca;
+    border-radius: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.contenedorins h3{
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    @include tituloCard;
+    text-decoration: none;
+    color: rgba(119, 169, 225, 0.523);
+}
+    
+.contenedorins ul li{
+    margin: 2rem;
+    list-style-type:circle;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid rgba(182, 182, 182, 0.112);
+}
+
+
+
+
+
+
+
+    
+
+}
