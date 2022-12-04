@@ -6,7 +6,7 @@
     
 }
 @mixin tituloMobile{
-    font: 3rem $letraParrafo;
+    font: 3.5rem $letraParrafo;
     margin: 7rem 1rem 0rem 1rem;
     color:$letrablanca;
 }
@@ -21,10 +21,71 @@
     line-height: 3rem;
 }
 
+@mixin parrafoTablet{
+    margin:3rem 3rem;
+    font: 2rem $letraParrafo;
+    font-weight: 800;
+    text-transform:uppercase;
+    text-align:center;
+    color:$letrablanca;
+    line-height: 4rem;
+}
+
+@mixin tituloTablet{
+    font: 3rem $letraParrafo;
+    margin: 9rem 1rem 0rem 1.6rem;
+    color:$letrablanca;
+}
+
+@mixin tituloNotebook{
+    font: 4.3rem $letraParrafo;
+    margin: 12rem 1rem 0rem 1.6rem;
+    color:$letrablanca;
+}
+
+@mixin parrafoNotebook{
+    margin:4rem 5rem;
+    font: 3.5rem $letraParrafo;
+    font-weight: 600;
+    text-transform:uppercase;
+    text-align:center;
+    color:$letrablanca;
+    line-height: 5.5rem;
+}
+
+
 @mixin tituloCard{
     font: 3rem $letraParrafo;
     margin-top: 2rem;
     margin-left: 1rem;
+}
+
+@mixin tituloCardTablet{
+    font: 3.4rem $letraParrafo;
+    margin-top: 2.5rem;
+}
+
+@mixin tituloCardNotebook{
+    font: 2rem $letraParrafo;
+    margin-top: 2.5rem;
+}
+
+@mixin parrafoCardTablet{
+    margin:1rem 0.6rem;
+    font: 1.6rem $letraParrafo;
+    font-weight: 800;
+    text-transform:uppercase;
+    text-align:left;
+    line-height: 4rem;
+}
+
+@mixin parrafoCardNotebook{
+    margin:1rem 0.6rem;
+    font: 2rem $letraParrafo;
+    font-weight: 800;
+    text-transform:uppercase;
+    text-align:left;
+    line-height: 5rem;
 }
 
 @mixin parrafoCard{
