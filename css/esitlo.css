@@ -13,7 +13,7 @@
     font-size: 62.5%;
   }
   .color {
-    background: rgba(77, 76, 76, 0.71);
+    background: rgba(172, 45, 45, 0.71);
     font: 2rem "Roboto Condensed", sans-serif;
     text-transform: uppercase;
     font-weight: 800;
@@ -205,7 +205,23 @@
       margin-left: -100%;
     }
   }
-  .sedeCentral, .sedeRayo, .sedeQuilmes, .sedeRioja, .sedeRosario, .sedeDragones {
+  .mailto {
+    margin: 2rem;
+    text-align: center;
+  }
+  .mailto a {
+    font-size: 2rem;
+    margin-top: 3rem;
+    text-decoration: none;
+    color: white;
+  }
+  .mailto a .mailtoImg {
+    width: 4rem;
+    margin: auto;
+    padding-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .sedeCentral, .sedeRayo, .sedeQuilmes, .sedeRioja, .sedeRosario, .sedeDragones, .sedeGerli {
     color: #e2e2e2;
     border-radius: 2rem;
     background: linear-gradient(-45deg, rgba(19, 26, 53, 0.6784313725) 50%, #001f3a 50%);
@@ -318,8 +334,8 @@
     grid-area: sede;
     display: grid;
     grid-template-areas: "techo" "titulo" "parrafo" "piso ";
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(/imagenes/fondoCards/guantes.jpg);
-    background-position: top left;
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.2)), url(/imagenes/fondoCards/fotosede.jpeg);
+    background-position: bottom left;
     background-size: cover;
   }
   .contenedorIndex .cardSede:hover {
@@ -330,8 +346,8 @@
     grid-area: instuctor;
     display: grid;
     grid-template-areas: "techo" "titulo" "parrafo" "piso ";
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(/imagenes/fondoCards/guantesDos.jpg);
-    background-position: bottom left;
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.4)), url(/imagenes/fondoCards/fondotres.jpeg);
+    background-position: center;
     background-size: cover;
   }
   .contenedorIndex .cardEventos {
@@ -339,8 +355,8 @@
     grid-area: eventos;
     display: grid;
     grid-template-areas: "techo" "titulo" "parrafo" "piso ";
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(/imagenes/fondoCards/sede.jpg);
-    background-position: right;
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.2)), url(/imagenes/fondoCards/fondoContacto.jpeg);
+    background-position: center;
     background-size: cover;
   }
   .contenedorIndex .cardContactos {
@@ -348,7 +364,7 @@
     grid-area: contacto;
     display: grid;
     grid-template-areas: "techo" "titulo" "parrafo" "piso ";
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(/imagenes/fire-and-water-2354583_640.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(/imagenes/fondoCards/fondotodo.jpeg);
     background-position: right;
     background-size: cover;
   }
@@ -611,6 +627,50 @@
   }
   .imagen {
     margin-left: 1rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 520px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-size: 62, 5%;
+  }
+  .instructorMartin, .instructorFernanda, .instructorAlan, .instructorIvan, .instructorEzequiel, .instructorNahir, .instructorAymara, .instructorLudmila, .instructorMatias, .instructorAron {
+    margin-bottom: 3rem;
+    height: auto;
+    margin: 3.5rem;
+    background-color: rgba(0, 0, 0, 0.425);
+    border-radius: 2rem;
+    border: 0.1rem solid white;
+    box-shadow: 0.3rem -0.2rem 0.5rem -0.3rem rgb(118, 213, 247);
+  }
+  .contenedorins {
+    color: rgb(255, 255, 255);
+    border-radius: 1rem;
+    text-align: center;
+    justify-content: center;
+  }
+  .contenedorins h3 {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration: none;
+    color: rgba(119, 169, 225, 0.523);
+  }
+  .contenedorins ul li {
+    margin: 2rem;
+    list-style-type: circle;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid rgba(182, 182, 182, 0.112);
   }
 }
 
