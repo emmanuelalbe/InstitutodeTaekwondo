@@ -10,7 +10,9 @@ html{
     font-size: 62.5%;
 }
 .color {
-    background: rgba(201, 200, 200, 0.71);
+    width: 100%;
+    position: fixed;
+    background: rgb(102, 95, 95);
     font: 2rem $letraParrafo;
     text-transform:uppercase;
     font-weight:800;
@@ -101,8 +103,10 @@ html{
 }
     
 .color {
+    background: rgb(102, 95, 95);
+    width: 100%;
+    position: fixed;
     text-align: center;
-    background: rgba(201, 200, 200, 0.71);
     font: 2.5rem $letraParrafo;
     text-transform: uppercase;
     font-weight: 800;
@@ -250,6 +254,7 @@ footer{
 
 @media (min-width:992px) {
 
+    
 *{box-sizing: border-box;
     margin: 0; 
     padding: 0;
@@ -258,7 +263,12 @@ footer{
 html{ 
     font-size: 62.5%;
     }
-        
+    body{
+        background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url(../imagenes/body.jpg);
+        background-attachment:fixed;
+        background-position:top center;
+        background-size:cover;
+    }        
 
 .navbar{
     background:black;

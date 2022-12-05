@@ -13,7 +13,9 @@
     font-size: 62.5%;
   }
   .color {
-    background: rgba(201, 200, 200, 0.71);
+    width: 100%;
+    position: fixed;
+    background: rgb(102, 95, 95);
     font: 2rem "Roboto Condensed", sans-serif;
     text-transform: uppercase;
     font-weight: 800;
@@ -80,8 +82,10 @@
     font-size: 62.5%;
   }
   .color {
+    background: rgb(102, 95, 95);
+    width: 100%;
+    position: fixed;
     text-align: center;
-    background: rgba(201, 200, 200, 0.71);
     font: 2.5rem "Roboto Condensed", sans-serif;
     text-transform: uppercase;
     font-weight: 800;
@@ -200,6 +204,12 @@
   }
   html {
     font-size: 62.5%;
+  }
+  body {
+    background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.5)), url(../imagenes/body.jpg);
+    background-attachment: fixed;
+    background-position: top center;
+    background-size: cover;
   }
   .navbar {
     background: black;
@@ -709,7 +719,7 @@
   }
 }
 /*Falta modificar este ultimo*/
-@media (min-width: 992) {
+@media (min-width: 992px) {
   * {
     box-sizing: border-box;
     margin: 0;
@@ -723,6 +733,7 @@
     text-align: center;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
   }
   .contenedorTituloParrafo h1, .contenedorTituloParrafo h2 {
     font: 4.3rem "Roboto Condensed", sans-serif;
@@ -740,24 +751,24 @@
     line-height: 5rem;
   }
   header figure {
-    margin-top: 8rem;
+    margin-top: 4rem;
     text-align: center;
   }
   header figure img {
-    width: 55rem;
+    width: 45rem;
     filter: drop-shadow(0.6rem 0.8rem 0.2rem rgb(0, 0, 0));
   }
   .contenedorIndex {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
     margin: 8rem;
     color: rgb(255, 255, 255);
+    grid-template-areas: "sede instructor" "contactos eventos";
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
   }
   .contenedorIndex .cardSede {
+    grid-area: sede;
     color: white;
-    margin-top: 10rem;
     display: grid;
     grid-template-areas: "techo" "titulo" "parrafo" "piso ";
     background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.2)), url(../imagenes/fondoCards/fotosede.jpeg);
@@ -765,16 +776,15 @@
     background-size: cover;
   }
   .contenedorIndex .cardInstructor {
-    margin-top: 4rem;
+    grid-area: instructor;
     display: grid;
     grid-template-areas: "techo" "titulo" "parrafo" "piso ";
     background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.4)), url(../imagenes/fondoCards/fondotres.jpeg);
-    background-position: center bottom;
+    background-position: center;
     background-size: cover;
-    background-attachment: fixed;
   }
   .contenedorIndex .cardEventos {
-    margin-top: 4rem;
+    grid-area: eventos;
     display: grid;
     grid-template-areas: "techo" "titulo" "parrafo" "piso ";
     background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.2)), url(../imagenes/fondoCards/guantesDos.jpg);
@@ -782,7 +792,7 @@
     background-size: cover;
   }
   .contenedorIndex .cardContactos {
-    margin-top: 4rem;
+    grid-area: contactos;
     display: grid;
     grid-template-areas: "techo" "titulo" "parrafo" "piso ";
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(../imagenes/fondoCards/fondotodo.jpeg);
@@ -793,7 +803,7 @@
     font: 3.4rem "Roboto Condensed", sans-serif;
     margin-top: 2.5rem;
     color: white;
-    margin-left: 2rem;
+    text-align: center;
   }
   .techoCard {
     background-color: rgba(77, 76, 76, 0.71);
@@ -1003,6 +1013,7 @@
     border: 0.1rem solid rgb(210, 210, 210);
     border-radius: 3rem;
     box-shadow: 0.3rem -0.2rem 0.9rem -0.3rem rgb(118, 213, 247);
+    transition: all 700ms;
   }
   .imagenesMetodologia figure img:hover {
     width: 32rem;

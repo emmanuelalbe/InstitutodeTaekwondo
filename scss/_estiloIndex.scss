@@ -340,90 +340,95 @@ header figure img{
 }
     
 /*Falta modificar este ultimo*/
-@media (min-width:992){
+@media (min-width:992px){
 
-    *{
-        @include siempre;
-    }
+*{
+    @include siempre;
+}
                
-    html{
-        font-size: 62.5%;
-    }
+html{
+    font-size: 62.5%;
+}
             
                 //Sección Header - Titulo - Parrafo
-    .contenedorTituloParrafo{
-        @include flexCenter;
-        flex-direction: column;
-    }
+.contenedorTituloParrafo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
                     
-    .contenedorTituloParrafo h1, .contenedorTituloParrafo h2{
-         @include tituloNotebook;
-     }
+.contenedorTituloParrafo h1, .contenedorTituloParrafo h2{
+     @include tituloNotebook;
+}
                     
-    .contenedorTituloParrafo p{
-        @include parrafoNotebook;
-    }
+.contenedorTituloParrafo p{
+    @include parrafoNotebook;
+}
             
-    header figure{
-        margin-top: 8rem;
-        text-align: center;
-        }
+header figure{
+    margin-top: 4rem;
+    text-align: center;
+}
                 
-    header figure img{
-        width:55rem;
-        filter: drop-shadow(0.6rem 0.8rem 0.2rem rgb(0, 0, 0));
-    }
+header figure img{
+    width:45rem;
+    filter: drop-shadow(0.6rem 0.8rem 0.2rem rgb(0, 0, 0));
+}
             
     //Sección Main- Tarjetas Index
-    .contenedorIndex{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        flex-direction: column;
-        margin:8rem;
-        color:$letrablanca;
-    }
+.contenedorIndex{
+    display: grid;
+    margin:8rem;
+    color:$letrablanca;
+    grid-template-areas: 
+    "sede instructor"
+    "contactos eventos";
+    grid-column-gap:4rem;
+    grid-row-gap:4rem;
+
+}
                 
-    .contenedorIndex .cardSede{
-        color: white;
-        margin-top:10rem;
-        @include card;
-        background-image:linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url(../imagenes/fondoCards/fotosede.jpeg);
-        background-position:bottom left;
-        background-size: cover;           
-    }
+.contenedorIndex .cardSede{
+    grid-area: sede;
+    color: white;
+    @include card;
+    background-image:linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url(../imagenes/fondoCards/fotosede.jpeg);
+    background-position:bottom left;
+    background-size: cover;           
+}
     
-    .contenedorIndex .cardInstructor{
-        margin-top: 4rem;
-        @include card;
-        background-image:linear-gradient(rgba(0, 0, 0,1 ), rgba(0, 0, 0, 0.4)), url(../imagenes/fondoCards/fondotres.jpeg);
-        background-position:center bottom;
-        background-size:cover;
-        background-attachment:fixed;
-    }
+.contenedorIndex .cardInstructor{
+    grid-area: instructor;
+    @include card;
+    background-image:linear-gradient(rgba(0, 0, 0,1 ), rgba(0, 0, 0, 0.4)), url(../imagenes/fondoCards/fondotres.jpeg);
+    background-position:center;
+    background-size:cover;
+}
                 
-    .contenedorIndex .cardEventos{
-        margin-top: 4rem;
-        @include card;
-        background-image:linear-gradient(rgba(0, 0, 0, 3), rgba(0, 0, 0, 0.2)), url(../imagenes/fondoCards/guantesDos.jpg);
-        background-position: top center;
-        background-size:cover;    
-    }
+.contenedorIndex .cardEventos{
+    grid-area: eventos;
+    @include card;
+    background-image:linear-gradient(rgba(0, 0, 0, 3), rgba(0, 0, 0, 0.2)), url(../imagenes/fondoCards/guantesDos.jpg);
+    background-position: top center;
+    background-size:cover;    
+}
                 
-    .contenedorIndex .cardContactos{
-        margin-top: 4rem;
-        @include card;
-        background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(../imagenes/fondoCards/fondotodo.jpeg);
-        background-position: center;
-        background-size:cover; 
-    }
+.contenedorIndex .cardContactos{
+    grid-area: contactos;
+    @include card;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(../imagenes/fondoCards/fondotodo.jpeg);
+    background-position: center;
+    background-size:cover; 
+}
     
     
-    .cardEventos .tituloCard,.cardInstructor .tituloCard,.cardSede .tituloCard,.cardContactos .tituloCard{
-        @include tituloCardNotebook;
-        color:white;
-        margin-left: 2rem;
-     }
+.cardEventos .tituloCard,.cardInstructor .tituloCard,.cardSede .tituloCard,.cardContactos .tituloCard{
+    @include tituloCardNotebook;
+    color:white;
+    text-align: center;
+}
                 
     .techoCard{
         background-color:rgba(77, 76, 76, 0.71);
