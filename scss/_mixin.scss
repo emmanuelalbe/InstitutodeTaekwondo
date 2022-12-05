@@ -5,6 +5,7 @@
     padding:0;
     
 }
+
 @mixin tituloMobile{
     font: 3.5rem $letraParrafo;
     margin: 7rem 1rem 0rem 1rem;
@@ -41,16 +42,17 @@
     font: 4.3rem $letraParrafo;
     margin: 12rem 1rem 0rem 1.6rem;
     color:$letrablanca;
+    font-weight: 800;
 }
 
 @mixin parrafoNotebook{
-    margin:4rem 5rem;
-    font: 3.5rem $letraParrafo;
-    font-weight: 600;
+    margin:3rem;
+    font: 2.6rem $letraParrafo;
+    font-weight: 500;
     text-transform:uppercase;
     text-align:center;
     color:$letrablanca;
-    line-height: 5.5rem;
+    line-height: 5rem;
 }
 
 
@@ -66,7 +68,7 @@
 }
 
 @mixin tituloCardNotebook{
-    font: 2rem $letraParrafo;
+    font: 3.4rem $letraParrafo;
     margin-top: 2.5rem;
 }
 
@@ -80,9 +82,9 @@
 }
 
 @mixin parrafoCardNotebook{
-    margin:1rem 0.6rem;
-    font: 2rem $letraParrafo;
-    font-weight: 800;
+    margin:2rem 1rem;
+    font: 2.3rem $letraParrafo;
+    font-weight: 400;
     text-transform:uppercase;
     text-align:left;
     line-height: 5rem;
