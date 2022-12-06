@@ -263,12 +263,13 @@ footer{
 html{ 
     font-size: 62.5%;
     }
-    body{
-        background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url(../imagenes/body.jpg);
-        background-attachment:fixed;
-        background-position:top center;
-        background-size:cover;
-    }        
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)), url(../imagenes/body.jpg);
+    background-attachment:fixed;
+    background-position:top center;
+    background-size:cover;
+}        
 
 .navbar{
     background:black;
@@ -313,11 +314,11 @@ footer{
                 a{
 
                     img{
-                        width:3rem;
+                        width:5rem;
                         transition: all 350ms ease-in-out ;
                             &:hover{
-                                width: 3.5rem;
-                                background-color: rgba(184, 147, 147, 0.457);
+                                width: 6rem;
+                                background-color: rgba(250, 247, 247, 0.457);
                                 border-radius: 100%;
                                  padding: 0.6rem;
                             }

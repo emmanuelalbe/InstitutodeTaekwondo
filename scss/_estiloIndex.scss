@@ -43,10 +43,6 @@ header figure img{
     margin-top: 7rem;
     grid-area: sede;
     @include card;
-    background-image:linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url(../imagenes/fondoCards/fotosede.jpeg);
-    background-position:bottom left;
-    background-size: cover;
-
 }
 //Verificar
 .contenedorIndex .cardSede:hover{
@@ -54,31 +50,21 @@ header figure img{
 }
 
 .contenedorIndex .cardInstructor{
-    
     margin-top: 4rem;
     grid-area:instuctor;
     @include card;
-    background-image:linear-gradient(rgba(0, 0, 0,1 ), rgba(0, 0, 0, 0.4)), url(/imagenes/fondoCards/fondotres.jpeg);
-    background-position:center;
-    background-size: cover;
 }
 
 .contenedorIndex .cardEventos{
     margin-top: 4rem;
     grid-area:eventos;
     @include card;
-    background-image:linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url(/imagenes/fondoCards/fondoContacto.jpeg);
-    background-position:  center ;
-    background-size: cover; 
 }
 
 .contenedorIndex .cardContactos{
     margin-top: 4rem;
     grid-area:contacto;
     @include card;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(/imagenes/fondoCards/fondotodo.jpeg);
-    background-position: right ;
-    background-size: cover; 
 }
 .cardEventos .tituloCard{
     @include tituloCard;
@@ -163,11 +149,8 @@ header figure img{
     color: white;
     margin-top: 7rem;
     @include card;
-    background-image:linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url(../imagenes/fondoCards/fotosede.jpeg);
-    background-position:bottom left;
-    background-size: cover;
-    
 }
+
     //Verificar
 .contenedorIndex .cardSede:hover{
     border-radius:$bordeCard;
@@ -176,33 +159,22 @@ header figure img{
 .contenedorIndex .cardInstructor{
     margin-top: 4rem;
     @include card;
-    background-image:linear-gradient(rgba(0, 0, 0,1 ), rgba(0, 0, 0, 0.4)), url(../imagenes/fondoCards/fondotres.jpeg);
-    background-position:center bottom;
-    background-size:cover;
-    background-attachment:fixed;
 }
     
 .contenedorIndex .cardEventos{
     margin-top: 4rem;
-    @include card;
-    background-image:linear-gradient(rgba(0, 0, 0, 3), rgba(0, 0, 0, 0.2)), url(../imagenes/fondoCards/guantesDos.jpg);
-    background-position: top center;
-    background-size:cover;    
+    @include card;  
 }
     
 .contenedorIndex .cardContactos{
     margin-top: 4rem;
     @include card;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(../imagenes/fondoCards/fondotodo.jpeg);
-    background-position: center ;
-    background-size:cover; 
 }
 
 .cardEventos .tituloCard{
      @include tituloCard;
     color:white;
-    
-    }
+}
     
 .techoCard{
     background-color:rgba(77, 76, 76, 0.71);
@@ -277,42 +249,29 @@ header figure img{
 .contenedorIndex .cardSede{
     color: white;
     margin-top:10rem;
-    @include card;
-    background-image:linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url(../imagenes/fondoCards/fotosede.jpeg);
-    background-position:bottom left;
-    background-size: cover;           
+    @include card;           
 }
 
 .contenedorIndex .cardInstructor{
     margin-top: 4rem;
     @include card;
-    background-image:linear-gradient(rgba(0, 0, 0,1 ), rgba(0, 0, 0, 0.4)), url(../imagenes/fondoCards/fondotres.jpeg);
-    background-position:center bottom;
-    background-size:cover;
-    background-attachment:fixed;
 }
             
 .contenedorIndex .cardEventos{
     margin-top: 4rem;
     @include card;
-    background-image:linear-gradient(rgba(0, 0, 0, 3), rgba(0, 0, 0, 0.2)), url(../imagenes/fondoCards/guantesDos.jpg);
-    background-position: top center;
-    background-size:cover;    
 }
             
 .contenedorIndex .cardContactos{
     margin-top: 4rem;
     @include card;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(../imagenes/fondoCards/fondotodo.jpeg);
-    background-position: center;
-    background-size:cover; 
 }
 
 
 .cardEventos .tituloCard,.cardInstructor .tituloCard,.cardSede .tituloCard,.cardContactos .tituloCard{
     @include tituloCardNotebook;
     color:white;
-    margin-left: 2rem;
+    text-align: center;
  }
             
 .techoCard{
@@ -374,7 +333,7 @@ header figure{
                 
 header figure img{
     width:45rem;
-    filter: drop-shadow(0.6rem 0.8rem 0.2rem rgb(0, 0, 0));
+    filter: drop-shadow(0.6rem 1rem 0.6rem rgb(0, 0, 0));
 }
             
     //Sección Main- Tarjetas Index
@@ -394,33 +353,25 @@ header figure img{
     grid-area: sede;
     color: white;
     @include card;
-    background-image:linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.2)), url(../imagenes/fondoCards/fotosede.jpeg);
-    background-position:bottom left;
-    background-size: cover;           
+            
 }
     
 .contenedorIndex .cardInstructor{
     grid-area: instructor;
     @include card;
-    background-image:linear-gradient(rgba(0, 0, 0,1 ), rgba(0, 0, 0, 0.4)), url(../imagenes/fondoCards/fondotres.jpeg);
-    background-position:center;
-    background-size:cover;
+   
 }
                 
 .contenedorIndex .cardEventos{
     grid-area: eventos;
     @include card;
-    background-image:linear-gradient(rgba(0, 0, 0, 3), rgba(0, 0, 0, 0.2)), url(../imagenes/fondoCards/guantesDos.jpg);
-    background-position: top center;
-    background-size:cover;    
+     
 }
                 
 .contenedorIndex .cardContactos{
     grid-area: contactos;
     @include card;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(../imagenes/fondoCards/fondotodo.jpeg);
-    background-position: center;
-    background-size:cover; 
+    
 }
     
     
@@ -430,18 +381,19 @@ header figure img{
     text-align: center;
 }
                 
-    .techoCard{
-        background-color:rgba(77, 76, 76, 0.71);
-        height: 4rem;
-        margin-bottom: 2rem;
-        border-radius:$bordeCard;
-    }
+.techoCard{
+    background-color:rgba(77, 76, 76, 0.71);
+    height: 4rem;
+    margin-bottom: 2rem;
+    border-radius:$bordeCard;
+}
     
-    .parrafoCard{
-        @include parrafoCardNotebook;
-        }
+.parrafoCard{
+     @include parrafoCardNotebook;
+     text-align: center;
+}
                 
-    .pisoCard{
+.pisoCard{
         background-color:rgba(77, 76, 76, 0.71);
         grid-area:piso;
         border-radius:$bordeCard; 
