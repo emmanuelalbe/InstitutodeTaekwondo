@@ -900,6 +900,367 @@
     margin-left: 1rem;
   }
 }
+@media (min-width: 521px) and (max-width: 730px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  .seccionImagenEventos {
+    margin-bottom: 6rem;
+    margin-top: 10rem;
+  }
+  .seccionImagenEventos .carruselEventos {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .carruselEventos ul {
+    text-align: center;
+    padding: 0;
+    display: flex;
+    width: 400%;
+    animation: cambiodos 20s infinite;
+    justify-content: center;
+  }
+  .carruselEventos li {
+    width: 100%;
+    list-style: none;
+  }
+  .carruselEventos li:last-child img {
+    width: 40rem;
+    border: none;
+  }
+  .carruselEventos li img {
+    width: 26rem;
+    border-radius: 2rem;
+    border: 0.1rem solid white;
+  }
+  @keyframes cambiodos {
+    20% {
+      margin-left: 0;
+    }
+    40% {
+      margin-left: 0;
+    }
+    45% {
+      margin-left: -100%;
+    }
+    60% {
+      margin-left: -100%;
+    }
+    65% {
+      margin-left: -200%;
+    }
+    80% {
+      margin-left: -200%;
+    }
+    85% {
+      margin-left: -300%;
+    }
+    100% {
+      margin-left: -300%;
+    }
+  }
+  .eventoUno, .eventoDos, .eventoTres {
+    display: flex;
+    margin: 1rem;
+    justify-items: space-around;
+    height: auto;
+  }
+  .descripcion {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: auto;
+  }
+  .descripcion h3 {
+    padding-top: 0.3rem;
+    border-top: 0.1rem solid rgba(230, 220, 220, 0.119);
+    font: 3.4rem "Roboto Condensed", sans-serif;
+    margin-top: 2.5rem;
+    line-height: 4rem;
+    text-decoration: none;
+  }
+  .descripcion p {
+    margin-top: 1.5rem;
+    font-size: 1.7rem;
+    font-weight: 330;
+    line-height: 2.6rem;
+  }
+  .descripcion figure img {
+    margin-top: 2.5rem;
+    width: 3rem;
+    transition: all 700ms;
+  }
+  .imagen figure img {
+    margin-right: 0.6rem;
+    margin-top: 2rem;
+    width: 13rem;
+    border: 0.1rem solid white;
+    border-radius: 1rem;
+  }
+  .eventoDos .imagen figure img {
+    height: 20rem;
+  }
+  .eventoTres .imagen figure img {
+    margin-top: 4rem;
+    height: 20rem;
+  }
+  .descripcion figure img:hover {
+    width: 3rem;
+  }
+  .descripcion figure img:active {
+    width: 2rem;
+  }
+  .imagen {
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 731px) and (max-width: 991px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  .seccionImagenEventos {
+    margin-bottom: 6rem;
+    margin-top: 10rem;
+  }
+  .seccionImagenEventos .carruselEventos {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .carruselEventos ul {
+    text-align: center;
+    padding: 0;
+    display: flex;
+    width: 400%;
+    animation: cambiodos 20s infinite;
+    justify-content: center;
+  }
+  .carruselEventos li {
+    width: 100%;
+    list-style: none;
+  }
+  .carruselEventos li:last-child img {
+    width: 45rem;
+    border: none;
+  }
+  .carruselEventos li img {
+    width: 27rem;
+    border-radius: 2rem;
+    border: 0.1rem solid white;
+  }
+  @keyframes cambiodos {
+    20% {
+      margin-left: 0;
+    }
+    40% {
+      margin-left: 0;
+    }
+    45% {
+      margin-left: -100%;
+    }
+    60% {
+      margin-left: -100%;
+    }
+    65% {
+      margin-left: -200%;
+    }
+    80% {
+      margin-left: -200%;
+    }
+    85% {
+      margin-left: -300%;
+    }
+    100% {
+      margin-left: -300%;
+    }
+  }
+  .eventoUno, .eventoDos, .eventoTres {
+    display: flex;
+    margin: 4rem;
+    justify-items: space-around;
+    height: auto;
+  }
+  .descripcion {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: auto;
+    align-items: center;
+  }
+  .descripcion h3 {
+    padding-top: 0.3rem;
+    border-top: 0.1rem solid rgba(230, 220, 220, 0.119);
+    font: 3.4rem "Roboto Condensed", sans-serif;
+    margin-top: 2.5rem;
+  }
+  .descripcion p {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    font-weight: 330;
+    line-height: 3.4rem;
+  }
+  .descripcion figure img {
+    margin-top: 2.5rem;
+    width: 3rem;
+    transition: all 700ms;
+  }
+  .imagen figure img {
+    margin-right: 0.6rem;
+    margin-top: 2rem;
+    width: 15rem;
+    border: 0.1rem solid white;
+    border-radius: 1rem;
+  }
+  .eventoDos .imagen figure img {
+    height: 24rem;
+  }
+  .eventoTres .imagen figure img {
+    margin-top: 4rem;
+    height: 24rem;
+  }
+  .descripcion figure img:hover {
+    width: 3rem;
+  }
+  .descripcion figure img:active {
+    width: 2rem;
+  }
+  .imagen {
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  .seccionImagenEventos {
+    margin-bottom: 6rem;
+    margin-top: 10rem;
+  }
+  .seccionImagenEventos .carruselEventos {
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+  }
+  .carruselEventos ul {
+    text-align: center;
+    padding: 0;
+    display: flex;
+    width: 400%;
+    animation: cambiodos 20s infinite;
+    justify-content: center;
+  }
+  .carruselEventos li {
+    width: 100%;
+    list-style: none;
+  }
+  .carruselEventos li:last-child img {
+    width: 45rem;
+    border: none;
+  }
+  .carruselEventos li img {
+    width: 27rem;
+    border-radius: 2rem;
+    border: 0.1rem solid white;
+  }
+  @keyframes cambiodos {
+    20% {
+      margin-left: 0;
+    }
+    40% {
+      margin-left: 0;
+    }
+    45% {
+      margin-left: -100%;
+    }
+    60% {
+      margin-left: -100%;
+    }
+    65% {
+      margin-left: -200%;
+    }
+    80% {
+      margin-left: -200%;
+    }
+    85% {
+      margin-left: -300%;
+    }
+    100% {
+      margin-left: -300%;
+    }
+  }
+  .eventoUno, .eventoDos, .eventoTres {
+    display: flex;
+    margin: 4rem;
+    justify-items: space-around;
+    height: auto;
+  }
+  .descripcion {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    height: auto;
+    align-items: center;
+  }
+  .descripcion h3 {
+    padding-top: 0.3rem;
+    border-top: 0.1rem solid rgba(230, 220, 220, 0.119);
+    font: 3.4rem "Roboto Condensed", sans-serif;
+    margin-top: 2.5rem;
+  }
+  .descripcion p {
+    margin-top: 1.5rem;
+    font-size: 2.4rem;
+    font-weight: 330;
+    line-height: 3.4rem;
+  }
+  .descripcion figure img {
+    margin-top: 2.5rem;
+    width: 3rem;
+    transition: all 700ms;
+  }
+  .imagen figure img {
+    margin-right: 0.6rem;
+    margin-top: 2rem;
+    width: 15rem;
+    border: 0.1rem solid white;
+    border-radius: 1rem;
+  }
+  .eventoDos .imagen figure img {
+    height: 24rem;
+  }
+  .eventoTres .imagen figure img {
+    margin-top: 4rem;
+    height: 24rem;
+  }
+  .descripcion figure img:hover {
+    width: 3rem;
+  }
+  .descripcion figure img:active {
+    width: 2rem;
+  }
+  .imagen {
+    margin-left: 1rem;
+  }
+}
 @media (min-width: 320px) and (max-width: 520px) {
   * {
     box-sizing: border-box;
@@ -1053,9 +1414,9 @@
     color: rgba(119, 169, 225, 0.523);
   }
   .contenedorins ul li {
-    margin: 0.2rem;
+    margin-left: 2rem;
+    list-style-image: url(../imagenes/fondoCards/check.png);
     text-align: center;
-    list-style-type: circle;
     font-size: 1.4rem;
     padding-bottom: 1.2rem;
   }
@@ -1089,10 +1450,10 @@
   .instructorNahir {
     grid-area: nahir;
   }
-  main {
+  .mianevento {
     margin: 2rem;
     display: grid;
-    grid-template-areas: "martin fernanda  alan ezequiel " "aymara ludmila nahir ivan" " . matias aron  .";
+    grid-template-areas: "martin  martin fernanda fernanda " "alan  ezequiel aymara ludmila " " nahir matias aron  ivan";
     grid-column-gap: 4rem;
     grid-row-gap: 4rem;
     justify-content: space-evenly;

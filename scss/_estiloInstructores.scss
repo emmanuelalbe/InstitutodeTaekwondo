@@ -143,84 +143,85 @@ html{
 }
 
 @media (min-width:992px) {
-*{
-    @include siempre;
-}
-           
-html{
-    font-size: 62,5%;
-}
-
-.instructorMartin, .instructorFernanda, .instructorAlan ,.instructorIvan , .instructorEzequiel ,.instructorNahir,.instructorAymara,.instructorLudmila, .instructorMatias, .instructorAron{
-
-    height:auto;
-    background-color: rgba(0, 0, 0, 0.425);
-    border-radius: 2rem;
-    border: 0.1rem solid white;
-    box-shadow:  0.9rem -0.8rem 1rem -0.9rem rgba(118,213,247,1);
-}
-           
-.contenedorins{
-    color: $letrablanca;
-    text-align: center;
-}
-           
-.contenedorins h3{
-    padding-bottom: 1.5rem;
-    @include tituloCard;
-    text-decoration: none;
-    color: rgba(119, 169, 225, 0.523);
-}
-               
-.contenedorins ul li{
-    margin:0.2rem;
-    text-align: center;
-    list-style-type:circle;
-    font-size: 1.4rem;
-    padding-bottom: 1.2rem;
-}
-
-.instructorMartin{
-    grid-area: martin;
-}
-.instructorAlan{
-    grid-area: alan;
-}
-.instructorAron{
-    grid-area: aron;
-}
-.instructorAymara{
-    grid-area: aymara;
-}
-.instructorEzequiel{
-    grid-area: ezequiel;
-}
-.instructorFernanda{
-    grid-area: fernanda;
-}
-.instructorIvan{
-    grid-area: ivan;
-}
-.instructorLudmila{
-    grid-area: ludmila;
-}
-.instructorMatias{
-    grid-area: matias;
-}
-.instructorNahir{
-    grid-area: nahir;
-}
-
-main{
-    margin: 2rem;
-    display: grid;
-    grid-template-areas:
-    "martin fernanda  alan ezequiel "
-    "aymara ludmila nahir ivan"
-    " . matias aron  ."
-    ;
-    grid-column-gap:4rem;
-    grid-row-gap:4rem;
-    justify-content: space-evenly;
-}
+    *{
+        @include siempre;
     }
+               
+    html{
+        font-size: 62,5%;
+    }
+    
+    .instructorMartin, .instructorFernanda, .instructorAlan ,.instructorIvan , .instructorEzequiel ,.instructorNahir,.instructorAymara,.instructorLudmila, .instructorMatias, .instructorAron{
+    
+        height:auto;
+        background-color: rgba(0, 0, 0, 0.425);
+        border-radius: 2rem;
+        border: 0.1rem solid white;
+        box-shadow:  0.9rem -0.8rem 1rem -0.9rem rgba(118,213,247,1);
+    }
+               
+    .contenedorins{
+        color: $letrablanca;
+        text-align: center;
+    }
+               
+    .contenedorins h3{
+        padding-bottom: 1.5rem;
+        @include tituloCard;
+        text-decoration: none;
+        color: rgba(119, 169, 225, 0.523);
+    }
+                   
+    .contenedorins ul li{
+        margin-left:2rem;
+        list-style-image: url(../imagenes/fondoCards/check.png);
+        text-align: center;
+        font-size: 1.4rem;
+        padding-bottom: 1.2rem;
+    }
+    
+    .instructorMartin{
+        grid-area: martin;
+    }
+    .instructorAlan{
+        grid-area: alan;
+    }
+    .instructorAron{
+        grid-area: aron;
+    }
+    .instructorAymara{
+        grid-area: aymara;
+    }
+    .instructorEzequiel{
+        grid-area: ezequiel;
+    }
+    .instructorFernanda{
+        grid-area: fernanda;
+    }
+    .instructorIvan{
+        grid-area: ivan;
+    }
+    .instructorLudmila{
+        grid-area: ludmila;
+    }
+    .instructorMatias{
+        grid-area: matias;
+    }
+    .instructorNahir{
+        grid-area: nahir;
+    }
+    
+.mianevento{
+        margin: 2rem;
+        display: grid;
+        grid-template-areas:
+        "martin  martin fernanda fernanda "
+        "alan  ezequiel aymara ludmila "
+        " nahir matias aron  ivan"
+    
+        ;
+        grid-column-gap:4rem;
+        grid-row-gap:4rem;
+        justify-content: space-evenly;
+    }
+        }
