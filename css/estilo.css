@@ -326,9 +326,8 @@
     height: auto;
     border: 0.1rem solid white;
     display: flex;
-    justify-content: center;
     text-align: center;
-    flex-direction: column;
+    justify-content: center;
   }
   .parteUno h3 {
     font: 2.5rem "Roboto Condensed", sans-serif;
@@ -452,9 +451,8 @@
     height: auto;
     border: 0.1rem solid white;
     display: flex;
-    justify-content: center;
     text-align: center;
-    flex-direction: column;
+    justify-content: center;
   }
   .parteUno h3 {
     font: 2.5rem "Roboto Condensed", sans-serif;
@@ -577,9 +575,8 @@
     height: auto;
     border: 0.1rem solid white;
     display: flex;
-    justify-content: center;
     text-align: center;
-    flex-direction: column;
+    justify-content: center;
     margin: 8rem;
   }
   .parteUno h3 {
@@ -694,51 +691,71 @@
     padding-top: 1.5rem;
     margin-bottom: 2rem;
   }
+  .contenedorInstructor {
+    margin: 2rem;
+    display: grid;
+    grid-template-areas: "gmg dragones " "rayo gerli" " quilmes rosario " "rioja rioja";
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+  }
+  .sedeCentral {
+    grid-area: gmg;
+  }
+  .sedeQuilmes {
+    grid-area: quilmes;
+  }
+  .sedeDragones {
+    grid-area: dragones;
+  }
+  .sedeGerli {
+    grid-area: gerli;
+  }
+  .sedeRioja {
+    margin: auto;
+    grid-area: rioja;
+  }
+  .sedeRosario {
+    grid-area: rosario;
+  }
+  .sedeRayo {
+    grid-area: rayo;
+  }
   .sedeCentral, .sedeRayo, .sedeQuilmes, .sedeRioja, .sedeRosario, .sedeDragones, .sedeGerli {
+    margin: auto;
+    width: 40rem;
     color: #e2e2e2;
     border-radius: 2rem;
     background: linear-gradient(-45deg, rgba(19, 26, 53, 0.6784313725) 50%, #001f3a 50%);
-    margin: 2.5rem;
     height: auto;
     border: 0.1rem solid white;
     display: flex;
-    justify-content: center;
     text-align: center;
-    flex-direction: column;
-    margin: 8rem;
+    justify-content: center;
   }
   .parteUno h3 {
     font: 3.4rem "Roboto Condensed", sans-serif;
     margin: 3rem 0 3rem 0;
     text-align: center;
+    margin-bottom: 1.3rem;
   }
   .parteUno h4 {
-    margin-bottom: 1.5rem;
-    font: 2.5rem "Roboto Condensed", sans-serif;
-    font-weight: 500;
-  }
-  .parteUno h4:nth-child(3) {
     margin-bottom: 2rem;
-  }
-  .parteUno h4:nth-child(4) {
-    margin-bottom: 4rem;
+    font: 2.4rem "Roboto Condensed", sans-serif;
+    font-weight: 300;
   }
   .parteUno ul li {
     list-style: none;
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem;
     font: 2.3rem "Roboto Condensed", sans-serif;
     font-weight: 400;
   }
   .parteDos {
-    margin-top: 3rem;
+    margin-top: 1.6rem;
   }
   .parteDos .cardEnlaces {
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-end;
-  }
-  .parteDos nav .cardEnlaces li {
-    list-style: none;
+    align-items: center;
   }
   .parteDos nav ul li a img {
     width: 4rem;
@@ -1429,8 +1446,7 @@
     font-size: 62.5%;
   }
   .seccionImagenEventos {
-    margin-bottom: 6rem;
-    margin-top: 10rem;
+    margin: 6rem 0 6rem 0;
   }
   .seccionImagenEventos .carruselEventos {
     width: 95%;
@@ -1454,7 +1470,7 @@
     border: none;
   }
   .carruselEventos li img {
-    width: 27rem;
+    width: 25rem;
     border-radius: 2rem;
     border: 0.1rem solid white;
   }
@@ -1486,9 +1502,11 @@
   }
   .eventoUno, .eventoDos, .eventoTres {
     display: flex;
-    margin: 4rem;
     justify-items: space-around;
+    align-items: center;
+    justify-content: center;
     height: auto;
+    margin-bottom: 4rem;
   }
   .descripcion {
     display: flex;
@@ -1500,36 +1518,33 @@
     align-items: center;
   }
   .descripcion h3 {
-    padding-top: 0.3rem;
-    border-top: 0.1rem solid rgba(230, 220, 220, 0.119);
+    padding-top: 0.8rem;
     font: 3.4rem "Roboto Condensed", sans-serif;
     margin: 3rem 0 3rem 0;
     text-align: center;
   }
   .descripcion p {
-    margin-top: 1.5rem;
     font-size: 2.4rem;
     font-weight: 330;
-    line-height: 3.4rem;
+    line-height: 3rem;
   }
   .descripcion figure img {
-    margin-top: 2.5rem;
     width: 3rem;
     transition: all 700ms;
   }
   .imagen figure img {
     margin-right: 0.6rem;
     margin-top: 2rem;
-    width: 15rem;
+    width: 18rem;
     border: 0.1rem solid white;
     border-radius: 1rem;
   }
   .eventoDos .imagen figure img {
-    height: 24rem;
+    height: 28rem;
   }
   .eventoTres .imagen figure img {
-    margin-top: 4rem;
-    height: 24rem;
+    margin-top: 6rem;
+    height: 28rem;
   }
   .descripcion figure img:hover {
     width: 3rem;

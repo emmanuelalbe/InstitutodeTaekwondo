@@ -421,48 +421,78 @@ html{
     margin-bottom: 2rem;
 }
 
+.contenedorInstructor{
+margin:2rem;
+display: grid;
+grid-template-areas: 
+"gmg dragones "
+"rayo gerli"
+" quilmes rosario "
+"rioja rioja";
+grid-column-gap:4rem;
+    grid-row-gap:4rem;
+
+}
+
+.sedeCentral{
+    grid-area:gmg;
+}
+
+.sedeQuilmes{
+    grid-area:quilmes;
+}
+
+.sedeDragones{
+    grid-area:dragones;
+}
+
+.sedeGerli{
+    grid-area:gerli;
+}
+
+.sedeRioja{
+    margin: auto;
+    grid-area:rioja;
+}
+
+.sedeRosario{
+    grid-area:rosario;
+}
+
+.sedeRayo{
+    grid-area:rayo;
+}
+
 .sedeCentral,.sedeRayo, .sedeQuilmes, .sedeRioja, .sedeRosario, .sedeDragones, .sedeGerli{
-    @include cardSedeMobile;
-    margin:8rem;
+    @include cardSedeNotebook;
 }
 
 .parteUno h3{
     @include tituloCardNotebook;
+    margin-bottom: 1.3rem;
 }
 
 .parteUno h4{
-    margin-bottom: 1.5rem;
-    font: 2.5rem $letraParrafo;
-    font-weight: 500;
-}
-
-.parteUno h4:nth-child(3){
-    margin-bottom:2rem;
-}
-
-.parteUno h4:nth-child(4){
-    margin-bottom:4rem;
+    margin-bottom: 2rem;
+    font: 2.4rem $letraParrafo;
+    font-weight: 300;
 }
 
 .parteUno ul li{
     list-style: none;
-    margin-bottom:1rem;
+    margin-bottom:0.6rem;
     font: 2.3rem $letraParrafo;
     font-weight: 400;
 }
 
 .parteDos{
-    margin-top: 3rem;
+    margin-top: 1.6rem;
 }
 
 .parteDos .cardEnlaces{
     display:flex;
     justify-content: space-evenly;
-    align-items: flex-end;
-}
-
-.parteDos nav .cardEnlaces li {
-   list-style: none;
+    align-items: center;
 }
 
 .parteDos nav ul li a img{
