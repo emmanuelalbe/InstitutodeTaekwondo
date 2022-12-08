@@ -1,27 +1,26 @@
 @media (min-width:320px) and (max-width:520px){
-
  *{
     @include siempre;
 }
 
  html{
     font-size: 62.5%;
-    }
+}
 
 .seccionImagenEventos{
-    margin-bottom: 6rem;
-    margin-top: 4rem;
+    margin:4rem 0 6rem 0;
 }  
 
 .seccionImagenEventos .carruselEventos{
     width: 95%;
     margin:auto;
     overflow:hidden;
-    }
+}
 
 .carruselEventos ul {
   @include carruselEventos;
 }
+
 .carruselEventos li{ 
     width: 100%;
     list-style: none;
@@ -57,23 +56,19 @@
  margin: 1rem;
  justify-items:space-around;
  height: auto;
- 
 }
-
 
 .descripcion{
     color: $letrablanca;
     text-align: center;
-    height: auto;
 }
 
 .descripcion h3{
-    padding-top: 0.3rem;
-    border-top: 0.1rem solid rgba(230, 220, 220, 0.119);
-   @include tituloCard;
+   padding-top: 0.3rem;
+   border-top: 0.1rem solid rgba(230, 220, 220, 0.119);
+   font: 2rem $letraParrafo;
    margin-top:2rem;
    line-height: 2rem;
-   text-decoration: none;
 }
 
 .descripcion p{
@@ -81,43 +76,41 @@
     font-size: 1.3rem ;
     font-weight: 330;
     line-height: 2rem;
-
 }
+
 .descripcion figure img{
     width: 2rem;
     transition: $transicion;
 
 }
+
 .imagen figure img{
-    margin-right: 0.6rem;
-    margin-top: 2rem;
+    margin: 2.3rem 0.6rem 0 0;
     width:13rem;
     border: 0.1rem solid white;
     border-radius:1rem;
 }
-.eventoDos .imagen  figure img{
-    height: 20rem;
-}
-.eventoTres .imagen  figure img{
-    margin-top: 4rem;
-    height: 20rem;
-  
-}
-
 
 .descripcion figure img:hover{
     width: 3rem;
 }
+
 .descripcion figure img:active{
     width: 2rem;
-    
 }
+
+.eventoDos .imagen  figure img{
+    height: 20rem;
+}
+
+.eventoTres .imagen  figure img{
+    margin-top: 4rem;
+    height: 20rem;
+}
+
 .imagen{
     margin-left:1rem;
 }
-
-
-
 
 }
 
@@ -132,8 +125,7 @@ html{
 }
    
 .seccionImagenEventos{
-    margin-bottom: 6rem;
-    margin-top: 10rem;
+    margin:5rem 0 6rem 0;
 }  
    
 .seccionImagenEventos .carruselEventos{
@@ -157,9 +149,10 @@ html{
 }
        
 .carruselEventos li img{ 
-    width:26rem;
+    width:20rem;
     border-radius:2rem;
-    border: 0.1rem solid white;}
+    border: 0.1rem solid white;
+}
        
 @keyframes cambiodos {
     20% {margin-left: 0;}
@@ -175,28 +168,26 @@ html{
     100% {margin-left: -300%;}
 }
    
-.eventoUno, .eventoDos, .eventoTres {
+.eventoUno, .eventoDos, .eventoTres{
     display: flex;
     margin: 1rem;
     justify-items:space-around;
     height: auto;
 }
    
-   
 .descripcion{
     color: $letrablanca;
     text-align: center;
     height: auto;
-   }
+}
    
 .descripcion h3{
     padding-top: 0.3rem;
-    border-top: 0.1rem solid rgba(230, 220, 220, 0.119);
     @include tituloCardTablet;
-    line-height: 4rem;
-    text-decoration: none;
-   }
-   .descripcion p{
+    line-height: 3.6rem;
+}
+
+.descripcion p{
     margin-top: 1.5rem;
     font-size: 1.7rem ;
     font-weight: 330;
@@ -209,33 +200,34 @@ html{
     transition: $transicion;
 }
 
-   .imagen figure img{
-       margin-right: 0.6rem;
-       margin-top: 2rem;
-       width:13rem;
-       border: 0.1rem solid white;
-       border-radius:1rem;
-   }
+.imagen figure img{
+    margin-right: 0.6rem;
+    margin-top: 2rem;
+    width:13rem;
+    border: 0.1rem solid white;
+    border-radius:1rem;
+}
+
 .eventoDos .imagen  figure img{
     height: 20rem;
-   }
+}
+
+.descripcion figure img:hover{
+    width: 3rem;
+}
+
+.descripcion figure img:active{
+    width: 2rem;
+}
 
 .eventoTres .imagen  figure img{
     margin-top: 4rem;
     height: 20rem;
      
-   }
-   
-   
-   .descripcion figure img:hover{
-       width: 3rem;
-   }
-   .descripcion figure img:active{
-       width: 2rem;
-       
-   }
-   .imagen{
-       margin-left:1rem;
+ }
+
+.imagen{
+    margin-left:2rem;
    }
    
    
@@ -246,7 +238,7 @@ html{
 
 @media (min-width:731px) and (max-width:991px){
 *{
-     @include siempre;
+    @include siempre;
 }
        
 html{
@@ -254,9 +246,8 @@ html{
 }
        
 .seccionImagenEventos{
-    margin-bottom: 6rem;
-    margin-top: 10rem;
-    }  
+    margin:10rem 0 6rem 0;
+}  
        
 .seccionImagenEventos .carruselEventos{
     width: 95%;
@@ -279,7 +270,7 @@ html{
 }
            
 .carruselEventos li img{ 
-    width:27rem;
+    width:25rem;
     border-radius:2rem;
     border: 0.1rem solid white;}
            
@@ -306,26 +297,24 @@ html{
        
        
 .descripcion{
-    display: flex;
-    justify-content: center;
+    @include flexCenter;
     flex-direction: column;
     color: $letrablanca;
     text-align: center;
     height: auto;
-    align-items: center;
-    }
+}
        
 .descripcion h3{
     padding-top: 0.3rem;
-    border-top: 0.1rem solid rgba(230, 220, 220, 0.119);
     @include tituloCardTablet;
 }
+
 .descripcion p{
     margin-top: 1.5rem;
-    font-size: 2rem ;
+    font: 2rem $letraParrafo ;
     font-weight: 330;
     line-height: 3.4rem;
-    }
+}
     
 .descripcion figure img{
     margin-top: 2.5rem;
@@ -334,8 +323,7 @@ html{
 }
     
 .imagen figure img{
-    margin-right: 0.6rem;
-    margin-top: 2rem;
+    margin:2rem 0.6rem 0 0;
     width:15rem;
     border: 0.1rem solid white;
     border-radius:1rem;
@@ -344,24 +332,23 @@ html{
 .eventoDos .imagen  figure img{
     height: 24rem;
 }
-    
-.eventoTres .imagen  figure img{
-    margin-top: 4rem;
-    height: 24rem;
-}
-       
+
 .descripcion figure img:hover{
     width: 3rem;
 }
 
 .descripcion figure img:active{
 width: 2rem;
+}   
+
+.eventoTres .imagen  figure img{
+    margin-top: 4rem;
+    height: 24rem;
 }
 
 .imagen{
-    margin-left:1rem;
-}
-       
+    margin:0 2rem 0 2rem;
+} 
 
 }
 
@@ -374,11 +361,11 @@ width: 2rem;
 html{
    font-size: 62.5%;
 }
-      
+
 .seccionImagenEventos{
    margin-bottom: 6rem;
    margin-top: 10rem;
-   }  
+}  
       
 .seccionImagenEventos .carruselEventos{
    width: 95%;
@@ -482,7 +469,7 @@ width: 2rem;
 }
 
 .imagen{
-   margin-left:1rem;
+   margin:0 2rem 0 2rem ;
 }
 
 }
