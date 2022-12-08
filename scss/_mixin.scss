@@ -22,25 +22,60 @@
     line-height: 3rem;
 }
 
-@mixin parrafoTablet{
-    margin:3rem 3rem;
-    font: 2rem $letraParrafo;
+
+
+
+
+
+
+
+@mixin tituloCard{
+    font: 3rem $letraParrafo;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+
+
+
+//Tamaño Tablet
+@mixin tituloTablet{
+    font: 3rem $letraParrafo;
+    margin-top: 9rem;
+    color:$letrablanca;
     font-weight: 800;
+}
+
+@mixin parrafoTablet{
+    margin:4rem 4rem;
+    font: 2rem $letraParrafo;
+    font-weight: 500;
     text-transform:uppercase;
     text-align:center;
     color:$letrablanca;
+    line-height: 4.3rem;
+}
+
+@mixin tituloCardTablet{
+    font: 3.4rem $letraParrafo;
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+@mixin parrafoCardTablet{
+    margin:1rem;
+    font: 1.6rem $letraParrafo;
+    font-weight: 550;
+    text-transform:uppercase;
+    text-align:center;
     line-height: 4rem;
 }
+// Finaliza el Tamaño Tablet
 
-@mixin tituloTablet{
-    font: 3rem $letraParrafo;
-    margin: 9rem 1rem 0rem 1.6rem;
-    color:$letrablanca;
-}
-
+//Tamaño Notebook
 @mixin tituloNotebook{
     font: 4.3rem $letraParrafo;
-    margin: 12rem 1rem 0rem 1.6rem;
+    margin-top: 10rem;
     color:$letrablanca;
     font-weight: 800;
 }
@@ -52,50 +87,31 @@
     text-transform:uppercase;
     text-align:center;
     color:$letrablanca;
-    line-height: 5rem;
-}
-
-
-@mixin tituloCard{
-    font: 3rem $letraParrafo;
-    margin-top: 2rem;
-    margin-left: 1rem;
-}
-
-@mixin tituloCardTablet{
-    font: 3.4rem $letraParrafo;
-    margin-top: 2.5rem;
+    line-height: 6rem;
 }
 
 @mixin tituloCardNotebook{
     font: 3.4rem $letraParrafo;
-    margin-top: 2.5rem;
-}
-
-@mixin parrafoCardTablet{
-    margin:1rem 0.6rem;
-    font: 1.6rem $letraParrafo;
-    font-weight: 800;
-    text-transform:uppercase;
-    text-align:left;
-    line-height: 4rem;
+    margin:3rem 0 3rem 0;
+    text-align: center;
 }
 
 @mixin parrafoCardNotebook{
-    margin:2rem 1rem;
     font: 2.3rem $letraParrafo;
-    font-weight: 400;
+    font-weight: 500;
     text-transform:uppercase;
-    text-align:left;
+    text-align:center;
     line-height: 5rem;
 }
 
+//Finaliza Tamaño Notebook
+
 @mixin parrafoCard{
     margin:1rem 0.6rem;
-    font: 1.2rem $letraParrafo;
-    font-weight: 800;
+    font: 1.4rem $letraParrafo;
+    font-weight: 500;
     text-transform:uppercase;
-    text-align:left;
+    text-align:center;
     line-height: 3rem;
 }
 @mixin tituloCard{
@@ -106,15 +122,7 @@
     text-decoration: underline;
 }
 
-@mixin card{
-    display: grid;
-    grid-template-areas:
-    "techo"
-    "titulo"
-    "parrafo"
-    "piso "
-    ;
-}
+
 
 
 /*Titulo y Parrafo Tamaño Pc*/

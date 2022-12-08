@@ -2,6 +2,7 @@
 *{
    @include siempre;
 }
+
 html{
     font-size: 62.5%;
 }
@@ -18,22 +19,21 @@ html{
 .contenedorTituloParrafo p{
     @include parrafoMobile;
 }
-header figure{
-    text-align: center;
+
+.headerIndex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-header figure img{
+.headerIndex figure img{
     width:30rem;
 }
+
 //Sección Main- Tarjetas Index
+
 .contenedorIndex{
-    display: grid;
-    grid-template-areas: 
-    "sede "
-    "instuctor"
-    "eventos"
-    "contacto"
-    ;
     margin:2rem;
     color:$letrablanca;
 }
@@ -41,64 +41,31 @@ header figure img{
 .contenedorIndex .cardSede{
     color: white;
     margin-top: 7rem;
-    grid-area: sede;
-    @include card;
-}
-//Verificar
-.contenedorIndex .cardSede:hover{
-    border-radius:$bordeCard;
 }
 
 .contenedorIndex .cardInstructor{
     margin-top: 4rem;
-    grid-area:instuctor;
-    @include card;
-}
-
-.contenedorIndex .cardEventos{
-    margin-top: 4rem;
-    grid-area:eventos;
-    @include card;
+    margin-bottom: 4rem;
 }
 
 .contenedorIndex .cardContactos{
     margin-top: 4rem;
-    grid-area:contacto;
-    @include card;
-}
-.cardEventos .tituloCard{
-    @include tituloCard;
-    grid-area:titulo;
-    color:white;
-
 }
 
-.techoCard{
+.techoCard, .pisoCard{
     background-color:rgba(77, 76, 76, 0.71);
     height: 2.2rem;
-    grid-area:techo;
     border-radius:$bordeCard;
 }
 
 .tituloCard{
     @include tituloCard;
-    grid-area:titulo;
+    text-align: center
 }
 
 .parrafoCard{
     @include parrafoCard;
-    grid-area:parrafo;
 }
-
-.pisoCard{
-    background-color:rgba(77, 76, 76, 0.71);
-    height: 2.2rem;
-    grid-area:piso;
-    border-radius:$bordeCard; 
-}
-
-
-
 
 }
 
@@ -112,7 +79,7 @@ html{
     font-size: 62.5%;
 }
 
-    //Sección Header - Titulo - Parrafo
+//Sección Header - Titulo - Parrafo
 .contenedorTituloParrafo{
     @include flexCenter;
     flex-direction: column;
@@ -126,21 +93,18 @@ html{
     @include parrafoTablet;
 }
 
- header figure{
-    text-align: center;
+.headerIndex{
+    @include flexCenter;
+    flex-direction: column; 
 }
     
-header figure img{
+.headerIndex figure img{
     width:40rem;
     filter: drop-shadow(0.2rem 0.8rem 0.2rem rgba(16, 204, 221, 0.128));
 }
 
     //Sección Main- Tarjetas Index
 .contenedorIndex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     margin:6rem;
     color:$letrablanca;
 }
@@ -148,35 +112,22 @@ header figure img{
 .contenedorIndex .cardSede{
     color: white;
     margin-top: 7rem;
-    @include card;
 }
 
-    //Verificar
-.contenedorIndex .cardSede:hover{
-    border-radius:$bordeCard;
- }
     
 .contenedorIndex .cardInstructor{
-    margin-top: 4rem;
-    @include card;
-}
-    
-.contenedorIndex .cardEventos{
-    margin-top: 4rem;
-    @include card;  
+    margin:4rem 0 4rem 0;
 }
     
 .contenedorIndex .cardContactos{
     margin-top: 4rem;
-    @include card;
 }
 
 .cardEventos .tituloCard{
-     @include tituloCard;
     color:white;
 }
     
-.techoCard{
+.techoCard,.pisoCard{
     background-color:rgba(77, 76, 76, 0.71);
     height: 2.5rem;
     border-radius:$bordeCard;
@@ -188,18 +139,8 @@ header figure img{
  
 .parrafoCard{
     @include parrafoCardTablet;
-    }
-    
-.pisoCard{
-     background-color:rgba(77, 76, 76, 0.71);
-     height: 2.5rem;
-    grid-area:piso;
-    border-radius:$bordeCard; 
-    }
-    
-    
-    
-    
+}
+
 }
 
 @media (min-width:731px) and (max-width:991px){
@@ -212,7 +153,8 @@ html{
     font-size: 62.5%;
 }
         
-            //Sección Header - Titulo - Parrafo
+//Sección Header - Titulo - Parrafo
+
 .contenedorTituloParrafo{
     @include flexCenter;
     flex-direction: column;
@@ -226,55 +168,45 @@ html{
     @include parrafoNotebook;
 }
         
-header figure{
-    margin-top: 8rem;
-    text-align: center;
-    }
-            
-header figure img{
-    width:55rem;
+.headerIndex{
+    @include flexCenter;
+    flex-direction:column;
+}
+    
+.headerIndex figure{
+    margin-top: 6rem;
+}
+
+.headerIndex figure img{
+    width:45rem;
     filter: drop-shadow(0.6rem 0.8rem 0.2rem rgb(0, 0, 0));
 }
         
 //Sección Main- Tarjetas Index
 .contenedorIndex{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    @include flexCenter;
     flex-direction: column;
     margin:8rem;
     color:$letrablanca;
 }
             
 .contenedorIndex .cardSede{
-    color: white;
-    margin-top:10rem;
-    @include card;           
+    margin-top:9rem;        
 }
 
 .contenedorIndex .cardInstructor{
-    margin-top: 4rem;
-    @include card;
+    margin:6rem 0 6rem 0;
 }
-            
-.contenedorIndex .cardEventos{
-    margin-top: 4rem;
-    @include card;
-}
-            
+                 
 .contenedorIndex .cardContactos{
-    margin-top: 4rem;
-    @include card;
+    margin-top: 6rem;
 }
-
 
 .cardEventos .tituloCard,.cardInstructor .tituloCard,.cardSede .tituloCard,.cardContactos .tituloCard{
     @include tituloCardNotebook;
-    color:white;
-    text-align: center;
  }
             
-.techoCard{
+.techoCard,.pisoCard{
     background-color:rgba(77, 76, 76, 0.71);
     height: 4rem;
     margin-bottom: 2rem;
@@ -283,19 +215,7 @@ header figure img{
 
 .parrafoCard{
     @include parrafoCardNotebook;
-    }
-            
-.pisoCard{
-    background-color:rgba(77, 76, 76, 0.71);
-    grid-area:piso;
-    border-radius:$bordeCard; 
-    height: 4rem;
-    margin-top: 2rem;
 }
-            
-            
-            
-            
 }
     
 /*Falta modificar este ultimo*/
@@ -308,14 +228,12 @@ header figure img{
 html{
     font-size: 62.5%;
 }
-            
-                //Sección Header - Titulo - Parrafo
+
+//Sección Header - Titulo - Parrafo
+
 .contenedorTituloParrafo{
-    display: flex;
-    text-align: center;
-    justify-content: center;
+    @include flexCenter;
     flex-direction: column;
-    align-items: center;
 }
                     
 .contenedorTituloParrafo h1, .contenedorTituloParrafo h2{
@@ -326,62 +244,52 @@ html{
     @include parrafoNotebook;
 }
             
-header figure{
-    margin-top: 4rem;
-    text-align: center;
+.headerIndex {
+    @include flexCenter;
+    flex-direction: row-reverse;
 }
                 
-header figure img{
-    width:45rem;
+.headerIndex figure img{
+    margin:13rem 0rem 0rem 1.6rem;
+    width:36rem;
     filter: drop-shadow(0.6rem 1rem 0.6rem rgb(0, 0, 0));
 }
             
-    //Sección Main- Tarjetas Index
+ //Sección Main- Tarjetas Index
+
 .contenedorIndex{
-    display: grid;
+    display:grid;
     margin:8rem;
     color:$letrablanca;
     grid-template-areas: 
     "sede instructor"
     "contactos eventos";
-    grid-column-gap:4rem;
-    grid-row-gap:4rem;
-
+    grid-column-gap:5rem;
+    grid-row-gap:5rem;
 }
                 
 .contenedorIndex .cardSede{
-    grid-area: sede;
-    color: white;
-    @include card;
-            
+    grid-area: sede;      
 }
     
 .contenedorIndex .cardInstructor{
     grid-area: instructor;
-    @include card;
-   
 }
                 
 .contenedorIndex .cardEventos{
     grid-area: eventos;
-    @include card;
-     
 }
                 
 .contenedorIndex .cardContactos{
     grid-area: contactos;
-    @include card;
-    
 }
     
     
 .cardEventos .tituloCard,.cardInstructor .tituloCard,.cardSede .tituloCard,.cardContactos .tituloCard{
     @include tituloCardNotebook;
-    color:white;
-    text-align: center;
 }
                 
-.techoCard{
+.techoCard,.pisoCard{
     background-color:rgba(77, 76, 76, 0.71);
     height: 4rem;
     margin-bottom: 2rem;
@@ -390,20 +298,9 @@ header figure img{
     
 .parrafoCard{
      @include parrafoCardNotebook;
-     text-align: center;
+    margin-bottom: 2rem;
 }
-                
-.pisoCard{
-        background-color:rgba(77, 76, 76, 0.71);
-        grid-area:piso;
-        border-radius:$bordeCard; 
-        height: 4rem;
-        margin-top: 2rem;
-    }
-                
-                
-                
-                
-    }
+           
+}
 
 
