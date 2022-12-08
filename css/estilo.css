@@ -2,7 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
 /*Titulo y Parrafo Tamaño Movil*/
-/*Titulo y Parrafo Tamaño Pc*/
 @media (min-width: 320px) and (max-width: 520px) {
   * {
     box-sizing: border-box;
@@ -324,11 +323,10 @@
     flex-direction: column;
   }
   .parteUno h3 {
-    font-size: 2rem;
+    font: 3rem "Roboto Condensed", sans-serif;
     margin-top: 1rem;
     font-weight: 600;
     text-transform: uppercase;
-    text-decoration: underline;
   }
   .parteUno h4 {
     margin-bottom: 1.5rem;
@@ -436,11 +434,10 @@
     border-radius: 0.25rem;
   }
   .tituloCard {
-    font-size: 2rem;
+    font: 3rem "Roboto Condensed", sans-serif;
     margin-top: 1rem;
     font-weight: 600;
     text-transform: uppercase;
-    text-decoration: underline;
     text-align: center;
   }
   .parrafoCard {
@@ -768,11 +765,10 @@
   .descripcion h3 {
     padding-top: 0.3rem;
     border-top: 0.1rem solid rgba(230, 220, 220, 0.119);
-    font-size: 2rem;
+    font: 3rem "Roboto Condensed", sans-serif;
     margin-top: 1rem;
     font-weight: 600;
     text-transform: uppercase;
-    text-decoration: underline;
     margin-top: 2rem;
     line-height: 2rem;
     text-decoration: none;
@@ -1185,34 +1181,30 @@
     font-size: 62, 5%;
   }
   .instructorMartin, .instructorFernanda, .instructorAlan, .instructorIvan, .instructorEzequiel, .instructorNahir, .instructorAymara, .instructorLudmila, .instructorMatias, .instructorAron {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     height: auto;
     margin: 3.5rem;
     background-color: rgba(0, 0, 0, 0.425);
     border-radius: 2rem;
-    border: 0.1rem solid white;
+    border: 0.1rem solid rgba(39, 178, 196, 0.457);
     box-shadow: 0.3rem -0.2rem 0.5rem -0.3rem rgb(118, 213, 247);
   }
   .contenedorins {
     color: rgb(255, 255, 255);
     border-radius: 1rem;
     text-align: center;
-    justify-content: center;
   }
   .contenedorins h3 {
     padding-top: 2rem;
     padding-bottom: 1.5rem;
-    text-align: center;
-    font-size: 2rem;
+    font: 3rem "Roboto Condensed", sans-serif;
     margin-top: 1rem;
     font-weight: 600;
     text-transform: uppercase;
-    text-decoration: underline;
-    text-decoration: none;
-    color: rgba(119, 169, 225, 0.523);
+    color: rgba(62, 145, 240, 0.523);
   }
   .contenedorins ul li {
-    margin: 2rem;
+    margin: 1.5rem;
     list-style-type: circle;
     font-size: 1.3rem;
     padding-bottom: 1rem;
@@ -1234,7 +1226,7 @@
     margin: 6rem;
     background-color: rgba(0, 0, 0, 0.425);
     border-radius: 2rem;
-    border: 0.1rem solid white;
+    border: 0.1rem solid rgba(39, 178, 196, 0.457);
     box-shadow: 0.9rem -0.8rem 1rem -0.9rem rgb(118, 213, 247);
   }
   .contenedorins {
@@ -1244,12 +1236,10 @@
   .contenedorins h3 {
     padding-top: 2rem;
     padding-bottom: 1.5rem;
-    text-align: center;
     font: 3.4rem "Roboto Condensed", sans-serif;
     margin-top: 2.5rem;
     text-align: center;
-    text-decoration: none;
-    color: rgba(119, 169, 225, 0.523);
+    color: rgba(62, 145, 240, 0.523);
   }
   .contenedorins ul li {
     margin: 2rem;
@@ -1274,7 +1264,7 @@
     margin: 8rem;
     background-color: rgba(0, 0, 0, 0.425);
     border-radius: 2rem;
-    border: 0.1rem solid white;
+    border: 0.1rem solid rgba(39, 178, 196, 0.457);
     box-shadow: 0.9rem -0.8rem 1rem -0.9rem rgb(118, 213, 247);
   }
   .contenedorins {
@@ -1284,15 +1274,13 @@
   .contenedorins h3 {
     padding-top: 2rem;
     padding-bottom: 1.5rem;
-    text-align: center;
     font: 3.4rem "Roboto Condensed", sans-serif;
     margin: 3rem 0 3rem 0;
     text-align: center;
-    text-decoration: none;
     color: rgba(119, 169, 225, 0.523);
   }
   .contenedorins ul li {
-    margin: 2rem;
+    margin: 4rem;
     list-style-type: circle;
     font-size: 1.8rem;
     padding-bottom: 1rem;
@@ -1320,19 +1308,16 @@
     text-align: center;
   }
   .contenedorins h3 {
-    padding-bottom: 1.5rem;
-    font-size: 2rem;
+    padding: 2rem 0 1.5rem 0;
+    font: 3rem "Roboto Condensed", sans-serif;
     margin-top: 1rem;
     font-weight: 600;
     text-transform: uppercase;
-    text-decoration: underline;
-    text-decoration: none;
     color: rgba(119, 169, 225, 0.523);
   }
   .contenedorins ul li {
-    margin-left: 2rem;
-    list-style-image: url(../imagenes/fondoCards/check.png);
-    text-align: center;
+    margin-left: 3rem;
+    list-style-image: url(../imagenes/check.png);
     font-size: 1.4rem;
     padding-bottom: 1.2rem;
   }
@@ -1372,7 +1357,6 @@
     grid-template-areas: "martin  martin fernanda fernanda " "alan  ezequiel aymara ludmila " " nahir matias aron  ivan";
     grid-column-gap: 4rem;
     grid-row-gap: 4rem;
-    justify-content: space-evenly;
   }
 }
 @media (min-width: 320px) and (max-width: 520px) {

@@ -9,12 +9,12 @@ html{
 }
 
 .instructorMartin, .instructorFernanda, .instructorAlan ,.instructorIvan , .instructorEzequiel ,.instructorNahir,.instructorAymara,.instructorLudmila, .instructorMatias, .instructorAron{
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     height:auto;
     margin: 3.5rem;
     background-color: rgba(0, 0, 0, 0.425);
     border-radius: 2rem;
-    border: 0.1rem solid white;
+    border: 0.1rem solid rgba(39, 178, 196, 0.457);
     box-shadow:  0.3rem -0.2rem 0.5rem -0.3rem rgba(118,213,247,1);
 }
 
@@ -22,35 +22,25 @@ html{
     color: $letrablanca;
     border-radius: 1rem;
     text-align: center;
-    justify-content: center;
 }
 
 .contenedorins h3{
     padding-top: 2rem;
     padding-bottom: 1.5rem;
-    text-align: center;
     @include tituloCard;
-    text-decoration: none;
-    color: rgba(119, 169, 225, 0.523);
+    color: rgba(62, 145, 240, 0.523);
 }
     
 .contenedorins ul li{
-    margin: 2rem;
+    margin: 1.5rem;
     list-style-type:circle;
     font-size: 1.3rem;
     padding-bottom: 1rem;
     border-bottom: 0.1rem solid rgba(182, 182, 182, 0.112);
 }
 
-
-
-
-
-
-
-    
-
 }
+
 
 @media (min-width:521px) and (max-width:730px){
 *{
@@ -67,7 +57,7 @@ html{
     margin: 6rem;
     background-color: rgba(0, 0, 0, 0.425);
     border-radius: 2rem;
-    border: 0.1rem solid white;
+    border: 0.1rem solid rgba(39, 178, 196, 0.457);
     box-shadow:  0.9rem -0.8rem 1rem -0.9rem rgba(118,213,247,1);
 }
    
@@ -79,10 +69,8 @@ html{
 .contenedorins h3{
     padding-top: 2rem;
     padding-bottom: 1.5rem;
-    text-align: center;
     @include tituloCardTablet;
-    text-decoration: none;
-    color: rgba(119, 169, 225, 0.523);
+    color: rgba(62, 145, 240, 0.523);
 }
        
 .contenedorins ul li{
@@ -92,8 +80,6 @@ html{
     padding-bottom: 1rem;
     border-bottom: 0.1rem solid rgba(182, 182,182, 0.112);
 }
-
-
 
 }
 
@@ -113,7 +99,7 @@ html{
     margin: 8rem;
     background-color: rgba(0, 0, 0, 0.425);
     border-radius: 2rem;
-    border: 0.1rem solid white;
+    border: 0.1rem solid rgba(39, 178, 196, 0.457);
     box-shadow:  0.9rem -0.8rem 1rem -0.9rem rgba(118,213,247,1);
 }
        
@@ -125,103 +111,104 @@ html{
 .contenedorins h3{
     padding-top: 2rem;
     padding-bottom: 1.5rem;
-    text-align: center;
     @include tituloCardNotebook;
-    text-decoration: none;
     color: rgba(119, 169, 225, 0.523);
 }
            
-    .contenedorins ul li{
-        margin: 2rem;
-        list-style-type:circle;
-        font-size: 1.8rem;
-        padding-bottom: 1rem;
-        border-bottom: 0.1rem solid rgba(182, 182,182, 0.112);
-    }
-
+.contenedorins ul li{
+    margin: 4rem;
+    list-style-type:circle;
+    font-size: 1.8rem;
+    padding-bottom: 1rem;
+    border-bottom: 0.1rem solid rgba(182, 182,182, 0.112);
+}
 
 }
 
 @media (min-width:992px) {
-    *{
-        @include siempre;
-    }
+*{
+    @include siempre;
+}
                
-    html{
-        font-size: 62,5%;
-    }
+html{
+    font-size: 62,5%;
+}
     
-    .instructorMartin, .instructorFernanda, .instructorAlan ,.instructorIvan , .instructorEzequiel ,.instructorNahir,.instructorAymara,.instructorLudmila, .instructorMatias, .instructorAron{
-    
-        height:auto;
-        background-color: rgba(0, 0, 0, 0.425);
-        border-radius: 2rem;
-        border: 0.1rem solid white;
-        box-shadow:  0.9rem -0.8rem 1rem -0.9rem rgba(118,213,247,1);
-    }
+.instructorMartin, .instructorFernanda, .instructorAlan ,.instructorIvan , .instructorEzequiel ,.instructorNahir,.instructorAymara,.instructorLudmila, .instructorMatias, .instructorAron{
+    height:auto;
+    background-color: rgba(0, 0, 0, 0.425);
+    border-radius: 2rem;
+    border: 0.1rem solid white;
+    box-shadow:  0.9rem -0.8rem 1rem -0.9rem rgba(118,213,247,1);
+}
                
-    .contenedorins{
-        color: $letrablanca;
-        text-align: center;
-    }
+.contenedorins{
+    color: $letrablanca;
+    text-align: center;
+}
                
-    .contenedorins h3{
-        padding-bottom: 1.5rem;
-        @include tituloCard;
-        text-decoration: none;
-        color: rgba(119, 169, 225, 0.523);
-    }
+.contenedorins h3{
+    padding: 2rem 0 1.5rem 0;
+    @include tituloCard;
+    color: rgba(119, 169, 225, 0.523);
+}
                    
-    .contenedorins ul li{
-        margin-left:2rem;
-        list-style-image: url(../imagenes/fondoCards/check.png);
-        text-align: center;
-        font-size: 1.4rem;
-        padding-bottom: 1.2rem;
-    }
+.contenedorins ul li{
+    margin-left:3rem;
+    list-style-image: url(../imagenes/check.png);
+    font-size: 1.4rem;
+    padding-bottom: 1.2rem;
+}
     
-    .instructorMartin{
-        grid-area: martin;
-    }
-    .instructorAlan{
-        grid-area: alan;
-    }
-    .instructorAron{
-        grid-area: aron;
-    }
-    .instructorAymara{
-        grid-area: aymara;
-    }
-    .instructorEzequiel{
-        grid-area: ezequiel;
-    }
-    .instructorFernanda{
-        grid-area: fernanda;
-    }
-    .instructorIvan{
-        grid-area: ivan;
-    }
-    .instructorLudmila{
-        grid-area: ludmila;
-    }
-    .instructorMatias{
-        grid-area: matias;
-    }
-    .instructorNahir{
-        grid-area: nahir;
-    }
+.instructorMartin{
+    grid-area: martin;
+}
+
+.instructorAlan{
+    grid-area: alan;
+}
+
+.instructorAron{
+    grid-area: aron;
+}
+
+.instructorAymara{
+    grid-area: aymara;
+}
+
+.instructorEzequiel{
+    grid-area: ezequiel;
+}
+
+.instructorFernanda{
+    grid-area: fernanda;
+}
+
+.instructorIvan{
+    grid-area: ivan;
+}
+
+.instructorLudmila{
+    grid-area: ludmila;
+}
+
+.instructorMatias{
+    grid-area: matias;
+}
+
+.instructorNahir{
+    grid-area: nahir;
+}
     
 .mianevento{
-        margin: 2rem;
-        display: grid;
-        grid-template-areas:
-        "martin  martin fernanda fernanda "
-        "alan  ezequiel aymara ludmila "
-        " nahir matias aron  ivan"
-    
-        ;
-        grid-column-gap:4rem;
-        grid-row-gap:4rem;
-        justify-content: space-evenly;
-    }
-        }
+    margin: 2rem;
+    display: grid;
+    grid-template-areas:
+    "martin  martin fernanda fernanda "
+    "alan  ezequiel aymara ludmila "
+    " nahir matias aron  ivan";
+    grid-column-gap:4rem;
+    grid-row-gap:4rem;
+}
+
+}

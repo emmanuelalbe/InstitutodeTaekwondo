@@ -2,8 +2,7 @@
 @mixin siempre{
     box-sizing: border-box; 
     margin: 0;
-    padding:0;
-    
+    padding:0; 
 }
 
 @mixin tituloMobile{
@@ -22,21 +21,21 @@
     line-height: 3rem;
 }
 
-
-
-
-
-
-
+@mixin parrafoCard{
+    margin:1rem 0.6rem;
+    font: 1.4rem $letraParrafo;
+    font-weight: 500;
+    text-transform:uppercase;
+    text-align:center;
+    line-height: 3rem;
+}
 
 @mixin tituloCard{
     font: 3rem $letraParrafo;
-    margin-top: 2rem;
-    margin-left: 1rem;
+    margin-top:1rem;
+    font-weight: 600;
+    text-transform:uppercase;
 }
-
-
-
 
 //Tamaño Tablet
 @mixin tituloTablet{
@@ -103,44 +102,9 @@
     text-align:center;
     line-height: 5rem;
 }
-
 //Finaliza Tamaño Notebook
 
-@mixin parrafoCard{
-    margin:1rem 0.6rem;
-    font: 1.4rem $letraParrafo;
-    font-weight: 500;
-    text-transform:uppercase;
-    text-align:center;
-    line-height: 3rem;
-}
-@mixin tituloCard{
-    font-size: 2rem;
-    margin-top:1rem;
-    font-weight: 600;
-    text-transform:uppercase;
-    text-decoration: underline;
-}
 
-
-
-
-/*Titulo y Parrafo Tamaño Pc*/
-@mixin tituloPc{
-    font: 5rem $letraParrafo;
-    margin-top: 10rem;
-    color:rgb(255, 255, 255) 
-}
-
-@mixin parrafoPc{
-    font: 2rem $letraParrafo;
-    font-weight: 800;
-    margin:5rem;
-    text-transform: uppercase;
-    text-align:center;
-    color:rgb(255, 255, 255);
-    line-height: 5rem;
-}
 
 @mixin flexCenter{
     display: flex;
@@ -148,15 +112,15 @@
     justify-content: center;
 }
 
-//Mixin Instructor
 
+//Mixin Instructor
 @mixin cardSedeMobile{
-    color:#e2e2e2 ;
-    border-radius: 2rem;
-    background:linear-gradient(-45deg,#131a35ad 50%, #001f3a 50%);
-    margin: 2.5rem;
-    height: auto;
-    border: 0.1rem solid white;
+   color:#e2e2e2 ;
+   border-radius: 2rem;
+   background:linear-gradient(-45deg,#131a35ad 50%, #001f3a 50%);
+   margin: 2.5rem;
+   height: auto;
+   border: 0.1rem solid white;
    display: flex;
    justify-content: center;
    text-align: center;
