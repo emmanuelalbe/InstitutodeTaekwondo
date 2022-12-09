@@ -121,11 +121,11 @@
     list-style: none;
   }
   footer nav ul li a img {
-    width: 5rem;
+    width: 3.5rem;
     transition: all 350ms ease-in-out;
   }
   footer nav ul li a img:hover {
-    width: 5.5rem;
+    width: 4rem;
     background-color: rgba(255, 255, 255, 0.457);
     border-radius: 100%;
     padding: 0.6rem;
@@ -185,11 +185,11 @@
     list-style: none;
   }
   footer nav ul li a img {
-    width: 5rem;
+    width: 4rem;
     transition: all 350ms ease-in-out;
   }
   footer nav ul li a img:hover {
-    width: 5.5rem;
+    width: 4.5rem;
     background-color: rgba(255, 255, 255, 0.457);
     border-radius: 100%;
     padding: 0.6rem;
@@ -247,11 +247,11 @@
     list-style: none;
   }
   footer nav ul li a img {
-    width: 5rem;
+    width: 4rem;
     transition: all 350ms ease-in-out;
   }
   footer nav ul li a img:hover {
-    width: 6rem;
+    width: 5rem;
     background-color: rgba(250, 247, 247, 0.457);
     border-radius: 100%;
     padding: 0.6rem;
@@ -1510,26 +1510,22 @@
 .eventoDos,
 .eventoTres {
     display: flex;
-    justify-items: space-around;
+    justify-items: space-evenly;
     align-items: center;
     justify-content: center;
     height: auto;
-    margin-bottom: 4rem;
   }
   .descripcion {
     display: flex;
+    text-align: center;
     justify-content: center;
     flex-direction: column;
     color: rgb(255, 255, 255);
     text-align: center;
     height: auto;
-    align-items: center;
   }
   .descripcion h3 {
-    padding-top: 0.8rem;
-    font: 3.4rem "Roboto Condensed", sans-serif;
-    margin: 3rem 0 3rem 0;
-    text-align: center;
+    font: 3.3rem "Roboto Condensed", sans-serif;
   }
   .descripcion p {
     font-size: 2.4rem;
@@ -1541,18 +1537,16 @@
     transition: all 700ms;
   }
   .imagen figure img {
-    margin-right: 0.6rem;
-    margin-top: 2rem;
-    width: 18rem;
+    width: 20rem;
     border: 0.1rem solid white;
     border-radius: 1rem;
+    margin: 2rem 0 2rem 0;
   }
   .eventoDos .imagen figure img {
-    height: 28rem;
+    height: 30rem;
   }
   .eventoTres .imagen figure img {
-    margin-top: 6rem;
-    height: 28rem;
+    height: 30rem;
   }
   .descripcion figure img:hover {
     width: 3rem;
@@ -1877,7 +1871,6 @@
     justify-content: center;
     display: grid;
     grid-template-areas: "uno" "dos" "tres" "cuatro" "cinco" "seis" "siete";
-    grid-column-gap: 7rem;
   }
   .imagenesMetodologia figure img {
     margin: 8rem;
@@ -1885,10 +1878,11 @@
     border: 0.1rem solid rgb(22, 235, 157);
     border-radius: 3rem;
     box-shadow: 0.3rem -0.2rem 0.9rem -0.3rem rgb(118, 213, 247);
-    transition: all 700ms;
+    transition: all 1s;
   }
   .imagenesMetodologia figure img:hover {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width: 47rem;
   }
   .contenedorUno,
 .contenedorDos,

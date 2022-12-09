@@ -38,33 +38,18 @@
   }
 
   @keyframes cambiodos {
-    20% {
-      margin-left: 0;
-    }
-    40% {
-      margin-left: 0;
-    }
+    20% {margin-left: 0;}
+    40% {margin-left: 0;}
 
-    45% {
-      margin-left: -100%;
-    }
-    60% {
-      margin-left: -100%;
-    }
+    45% {margin-left: -100%;}
+    60% {margin-left: -100%;}
 
-    65% {
-      margin-left: -200%;
-    }
-    80% {
-      margin-left: -200%;
-    }
+    65% {margin-left: -200%;}
+    80% {margin-left: -200%;}
 
     85% {
-      margin-left: -300%;
-    }
-    100% {
-      margin-left: -300%;
-    }
+      margin-left: -300%;}
+    100% {margin-left: -300%;}
   }
 
   .eventoUno,
@@ -170,33 +155,17 @@
   }
 
   @keyframes cambiodos {
-    20% {
-      margin-left: 0;
-    }
-    40% {
-      margin-left: 0;
-    }
+    20% {margin-left: 0;}
+    40% {margin-left: 0;}
 
-    45% {
-      margin-left: -100%;
-    }
-    60% {
-      margin-left: -100%;
-    }
+    45% {margin-left: -100%;}
+    60% {margin-left: -100%;}
 
-    65% {
-      margin-left: -200%;
-    }
-    80% {
-      margin-left: -200%;
-    }
+    65% {margin-left: -200%;}
+    80% {margin-left: -200%;}
 
-    85% {
-      margin-left: -300%;
-    }
-    100% {
-      margin-left: -300%;
-    }
+    85% {margin-left: -300%;}
+    100% {margin-left: -300%;}
   }
 
   .eventoUno,
@@ -303,33 +272,17 @@
   }
 
   @keyframes cambiodos {
-    20% {
-      margin-left: 0;
-    }
-    40% {
-      margin-left: 0;
-    }
+    20% {margin-left: 0;}
+    40% {margin-left: 0;}
 
-    45% {
-      margin-left: -100%;
-    }
-    60% {
-      margin-left: -100%;
-    }
+    45% {margin-left: -100%;}
+    60% {margin-left: -100%;}
 
-    65% {
-      margin-left: -200%;
-    }
-    80% {
-      margin-left: -200%;
-    }
+    65% {margin-left: -200%;}
+    80% {margin-left: -200%;}
 
-    85% {
-      margin-left: -300%;
-    }
-    100% {
-      margin-left: -300%;
-    }
+    85% {margin-left: -300%;}
+    100% {margin-left: -300%;}
   }
 
   .eventoUno,
@@ -436,59 +389,40 @@
   }
 
   @keyframes cambiodos {
-    20% {
-      margin-left: 0;
-    }
-    40% {
-      margin-left: 0;
-    }
+    20% {margin-left: 0;}
+    40% {margin-left: 0;}
 
-    45% {
-      margin-left: -100%;
-    }
-    60% {
-      margin-left: -100%;
-    }
+    45% {margin-left: -100%;}
+    60% {margin-left: -100%;}
 
-    65% {
-      margin-left: -200%;
-    }
-    80% {
-      margin-left: -200%;
-    }
+    65% {margin-left: -200%;}
+    80% {margin-left: -200%;}
 
-    85% {
-      margin-left: -300%;
-    }
-    100% {
-      margin-left: -300%;
-    }
+    85% {margin-left: -300%;}
+    100% {margin-left: -300%;}
   }
 
   .eventoUno,
   .eventoDos,
   .eventoTres {
     display: flex;
-    justify-items: space-around;
+    justify-items: space-evenly;
     align-items: center;
     justify-content: center;
-    height: auto;
-    margin-bottom: 4rem;
+    height:auto;
   }
 
   .descripcion {
-    display: flex;
-    justify-content: center;
+    @include flexCenter;
     flex-direction: column;
     color: $letrablanca;
     text-align: center;
     height: auto;
-    align-items: center;
+
   }
 
   .descripcion h3 {
-    padding-top: 0.8rem;
-    @include tituloCardNotebook;
+    font:3.3rem $letraParrafo;
   }
 
   .descripcion p {
@@ -502,21 +436,19 @@
     transition: $transicion;
   }
 
-  .imagen figure img {
-    margin-right: 0.6rem;
-    margin-top: 2rem;
-    width: 18rem;
+  .imagen figure img{
+    width: 20rem;
     border: 0.1rem solid white;
     border-radius: 1rem;
+    margin: 2rem 0 2rem 0;
   }
 
   .eventoDos .imagen figure img {
-    height: 28rem;
+    height: 30rem;
   }
 
   .eventoTres .imagen figure img {
-    margin-top: 6rem;
-    height: 28rem;
+    height: 30rem;
   }
 
   .descripcion figure img:hover {
