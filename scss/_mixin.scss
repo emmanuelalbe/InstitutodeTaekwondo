@@ -104,8 +104,6 @@
 }
 //Finaliza Tamaño Notebook
 
-
-
 @mixin flexCenter{
     display: flex;
     text-align: center;
@@ -125,14 +123,14 @@
 }
 
 @mixin cardSedeNotebook{
-    margin:auto;
-  width:40rem;
+   margin:auto;
+   width:40rem;
    color:#e2e2e2 ;
    border-radius: 2rem;
    background:linear-gradient(-45deg,#131a35ad 50%, #001f3a 50%);
    height:auto;
    border: 0.1rem solid white;
-  @include flexCenter;
+   @include flexCenter;
 }
 
 @mixin carruselUl{
