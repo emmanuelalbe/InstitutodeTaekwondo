@@ -201,12 +201,13 @@ html{
 }
     
 .mianevento{
-    margin: 2rem;
+    margin: 4rem;
     display: grid;
     grid-template-areas:
-    "martin  martin fernanda fernanda "
-    "alan  ezequiel aymara ludmila "
-    " nahir matias aron  ivan";
+    "martin  fernanda ezequiel  "
+    " alan aymara ludmila  "
+    " nahir ivan aron  "
+    ".  matias .";
     grid-column-gap:4rem;
     grid-row-gap:4rem;
 }
